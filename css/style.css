@@ -1,0 +1,397 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/*9 подключаю шрифты */
+@font-face {
+  font-family: 'balqis';
+  src: url('../fonts/balqis.woff2') format('woff2'),
+    url('../fonts/balqis.woff') format('woff');
+  /* н асыщеность шрифта */
+  font-weight: 300;
+  /* определяет начертание шрифта */
+  font-style: normal;
+  /* Браузер сразу отрисовывает текст безопасным шрифтом и пользователь не видит пустого экрана дожидаясь загрузки шрифта. Но когда шрифт загрузится, он сразу заменится */
+  font-display: swap;
+}
+
+/*9 подключаю шрифты */
+@font-face {
+  font-family: 'RobotoCondensed-Light';
+  src: url('../fonts/RobotoCondensed-Light.woff2') format('woff2'),
+    url('../fonts/RobotoCondensed-Light.woff') format('woff');
+  /* н асыщеность шрифта */
+  font-weight: 300;
+  /* определяет начертание шрифта */
+  font-style: normal;
+  /* Браузер сразу отрисовывает текст безопасным шрифтом и пользователь не видит пустого экрана дожидаясь загрузки шрифта. Но когда шрифт загрузится, он сразу заменится */
+  font-display: swap;
+}
+
+/*9 подключаю шрифты */
+@font-face {
+  font-family: 'RobotoCondensed-LightItalic';
+  src: url('../fonts/RobotoCondensed-LightItalic.woff2') format('woff2'),
+    url('../fonts/RobotoCondensed-LightItalic.woff') format('woff');
+  /* н асыщеность шрифта */
+  font-weight: 300;
+  /* определяет начертание шрифта */
+  font-style: normal;
+  /* Браузер сразу отрисовывает текст безопасным шрифтом и пользователь не видит пустого экрана дожидаясь загрузки шрифта. Но когда шрифт загрузится, он сразу заменится */
+  font-display: swap;
+}
+
+/*9 подключаю шрифты */
+@font-face {
+  font-family: 'RobotoCondensed-Regular ';
+  src: url('../fonts/RobotoCondensed-Regular.woff2') format('woff2'),
+    url('../fonts/RobotoCondensed-Regular.woff') format('woff');
+  /* н асыщеность шрифта */
+  font-weight: 400;
+  /* определяет начертание шрифта */
+  font-style: normal;
+  /* Браузер сразу отрисовывает текст безопасным шрифтом и пользователь не видит пустого экрана дожидаясь загрузки шрифта. Но когда шрифт загрузится, он сразу заменится */
+  font-display: swap;
+}
+
+/* 3 задал цвет тексту на сайте */
+body {
+  color: #000;
+  /* задаю среднее значение по сайту */
+  font-family: 'RobotoCondensed-Light';
+  /* размер шрифта */
+  font-size: 18px;
+  /* высота строки */
+  line-height: 21px;
+}
+
+/* 4 ссылки наследуют цвет */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 5 убрал лишнее у ul */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none
+}
+
+/* 15  внешний отступ секции сверху/снизу*/
+.page-section {
+  /* внешний отступ */
+  margin: 200px auto;
+  /* максимальная ширина позволяет контенту не расползатся при изменении экрана */
+  max-width: 1920px;
+}
+
+/* 16  оформляю все тайтлы */
+.title {
+  /* размер шрифта */
+  font-size: 96px;
+  /* высота строки */
+  line-height: 128px;
+  /* цвет шрифта */
+  color: #E2AB3F;
+  /* шрифт */
+  font-family: 'balqis';
+  /* насыщенность шрифта */
+  font-weight: 300;
+  /* внешний отступ от нижнего края */
+  margin-bottom: 100px;
+}
+
+.title span {
+  /* размер шрифта */
+  font-size: 24px;
+  /* высота строки */
+  line-height: 28px;
+  /* цвет */
+  color: #000;
+  /* семейство шрифтов */
+  font-family: 'RobotoCondensed-LightItalic';
+  /* шасыщеность цвета */
+  font-weight: 300;
+  /* блочный элемент */
+  display: block;
+  /*  внешний отступ сверху */
+  margin-top: -30px;
+  /*внешний остступ слева */
+}
+
+.fairy-tail__title span {
+  margin-left: 185px;
+}
+
+/* 2 контейнер */
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+}
+
+/* 1 заголовок */
+header {
+  /* высота */
+  height: 100vh;
+  /* добавил картинку */
+  background-image: url(../images/header_bg.jpg);
+  /* убрал повторение картинки */
+  background-repeat: no-repeat;
+  /* выровнял картинку от нижнего края */
+  background-position: bottom center;
+  /* Масштабирует изображение с сохранением пропорций так, чтобы его ширина или высота равнялась ширине или высоте блока. */
+  background-size: cover;
+}
+
+/*6 верхняя часть заголовка */
+.header__top {
+  font-family: 'RobotoCondensed-Regular ';
+  /* раскидываю меню флексами */
+  display: flex;
+  justify-content: space-between;
+  /* отступ от верхнего края */
+  padding-top: 72px;
+  /* размер шрифта */
+  font-size: 24px;
+  /* высота строки */
+  line-height: 28px;
+}
+
+/*7 пункт списка меню */
+.menu__list-item {
+  display: inline-block;
+}
+
+/* 8 делаю отступ для элементов меню */
+.menu__list-item+.menu__list-item {
+  margin-left: 52px;
+}
+
+/* 10 применяю ховер для появления полоски при наведении */
+.menu__list-link:hover {
+  text-decoration: underline;
+}
+
+/* 11 телефон заголовка (добавляю значек телефона) */
+.header__phone {
+  /* внутреним отступом место под значек */
+  padding-left: 40px;
+  /* позиционирование относительно родителя */
+  position: relative;
+}
+
+/* 12 при помощи псевдо элемента бефор добовляю иконку телефона */
+.header__phone::before {
+  /* обязательно прописываю контент */
+  content: "";
+  /* позиционирование относительно родителя header__phone */
+  position: absolute;
+  /* ширина иконки */
+  width: 30px;
+  /* высота иконки */
+  height: 30px;
+  /* отступ от левого края */
+  left: 0;
+  /* добавляю иконку */
+  background-image: url(../images/phone.svg);
+}
+
+/* 13 оформляю заголовок заголовка */
+.header__title {
+  /* присваиваю семейство шрифтов */
+  font-family: 'balqis';
+  /* выравниваю текст по центру */
+  text-align: center;
+  /* отступаю внутренним отступом */
+  padding-top: 152px;
+  /* размер шрифта */
+  font-size: 250px;
+  /* высота строки */
+  line-height: 334px;
+  /* насыщенность шрифта */
+  font-weight: 300;
+  /* убираю внешние отступы */
+  margin: 0;
+}
+
+/* 14 оформляю второй заголовок в теге спан */
+.header__title span {
+  font-family: 'RobotoCondensed-LightItalic';
+  /* делаю заголовок блочным */
+  display: block;
+  /* подвинул в правый бок */
+  text-align: right;
+  /* размер шрифта */
+  font-size: 56px;
+  /* высота строки */
+  line-height: 66px;
+  /* внешний отступ справа */
+  margin-right: 85px;
+  /* внешний отступ сверху */
+  margin-top: -66px;
+}
+
+/* слайдер занимает 50% ширины */
+.fairy-tail__slider {
+  width: 50%;
+}
+
+/* настраиваю стрелки навигации слайдера */
+.slick-btn {
+  /* позиционирование стрелок */
+  position: absolute;
+  /* расположение стрелок по середине */
+  top: 50%;
+  /* ставлю стрелки ровно посередине */
+  transform: translateY(-50%);
+  /* поднял стрелки на переднюю линию */
+  z-index: 5;
+  /* курсор в виде руки при наведение на стрелку */
+  cursor: pointer;
+  /* фон вокруг стрелок прозрачный */
+  background-color: transparent;
+  /* убрал рамку вокруг стрелок */
+  border: none;
+  /* убрал рамку вокруг стрелок при наведении */
+  outline: none;
+}
+
+/* прижал стрелки к краю */
+.slick-prev {
+  left: 0;
+}
+
+/* прижал стрелки к краю */
+.slick-next {
+  right: 0;
+}
+
+/* общий родитель для слайдера и текста */
+.fairy-tail__inner {
+  /* абсолютное позиционирование текста относительно родителя */
+
+  position: relative;
+}
+
+.fairy-tail__container,
+.our-trip__container {
+  /* максимальная ширина */
+  max-width: 1230px;
+  /* отступ слева/справа */
+  padding: 0 15px;
+  /* центровка контейнера */
+  margin: 0 auto;
+  /* абсолютное позицианирование */
+  position: absolute;
+  /* растянул текст */
+  /* левый отступ */
+  left: 0;
+  /* правый отступ */
+  right: 0;
+  /* верхний отступ */
+  top: 0;
+  /* нижний отступ */
+  bottom: 0;
+}
+
+.fairy-tail__body {
+  /* ширина текста в процентах */
+  width: 50%;
+  /* прижал текст к левому краю */
+  margin-left: auto;
+  /* отступил от слайдера внутренним отступом */
+  padding-left: 55px;
+  /* применил флексы */
+  display: flex;
+  /* задал направление тексту сверху внизj*/
+  flex-direction: column;
+  /* выравниваю по вертикали */
+  justify-content: space-around;
+  /* делаю высоту блока от родителя 100% */
+  height: 100%;
+}
+
+.fairy-tail__body-title {
+  /* добавил шрифт */
+  font-family: 'RobotoCondensed-Regular ';
+}
+
+.fairy-tail__text {
+  /* сделал для текста внутренний отступ что бы не прилипал при добавлении текста. */
+  padding: 10px 0;
+}
+
+.our-trip__slider {
+  /* ширина */
+ width: 50%;
+ /* внешний отступ влево */
+  margin-left: auto;
+}
+
+.our-trip__inner {
+  /* позиционирование */
+  position: relative;
+}
+
+.our-trip__title span {
+  /* внешний отступ слева */
+  margin-left: 250px;
+}
+
+.our-trip__body {
+  /* Элемент ведёт себя как блочный и выкладывает содержимое согласно флекс-модели */
+  display: flex;
+  /* Главная ось располагается вертикально и направлена сверху вниз. */
+  flex-direction: column;
+  /* Флексы равномерно распределяются по всей строке. Первый и последний элемент прижимаются к соответствующим краям контейнера. */
+  justify-content: space-between;
+  /* высота */
+  height: 100%;
+  /* Флексы выравниваются в начале поперечной оси контейнера. */
+  align-items: start;
+}
+
+.our-trip__content {
+  /* ширина */
+  width: 50%;
+  /* отступ справа */
+  padding-right: 55px;
+}
+стили
+.our-trip__list {
+  /* внешний отступ сверху/снизу */
+  margin: 5px 0;
+  /* размер шрифта */
+  font-size: 24px;
+  /* высота строки */
+  line-height: 28px;
+}
+/* задаёт стиль первого элемента в группе братских элементов */
+.our-trip__list li:first-child {
+  /* внешний отступ снизу */
+  margin-bottom: 20px;
+  /* добавил шрифт */
+  font-family: 'RobotoCondensed-Regular ';
+}
+
+.our-trip__btn {
+  /* насыщеность */
+  font-weight: 300;
+  /* размер шрифта */
+  font-size: 24px;
+  /* высота строки */
+  line-height: 28px;
+  /* параметры рамки */
+  border: 1px solid #E2AB3F;
+  /* отступ сверху/снизу, слева/справа */
+  padding: 11px 53px;
+}
