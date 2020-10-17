@@ -395,3 +395,25 @@ header {
   /* отступ сверху/снизу, слева/справа */
   padding: 11px 53px;
 }
+.hotel__title span{
+  margin-left: 120px;
+}
+
+.hotel__inner{
+display: flex;
+}
+.hotel__images{
+  margin-right: 20px;
+}
+.hotel__text{
+  margin-bottom: 20px;
+}
+.hotel__gallery{
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-aroundf;
+}
+.hotel__gallery a {
+  margin-top: 50px;
+}
