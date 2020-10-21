@@ -278,7 +278,6 @@ header {
 /* общий родитель для слайдера и текста */
 .fairy-tail__inner {
   /* абсолютное позиционирование текста относительно родителя */
-
   position: relative;
 }
 
@@ -366,7 +365,6 @@ header {
   /* отступ справа */
   padding-right: 55px;
 }
-стили
 .our-trip__list {
   /* внешний отступ сверху/снизу */
   margin: 5px 0;
@@ -396,24 +394,59 @@ header {
   padding: 11px 53px;
 }
 .hotel__title span{
+  /* внешний отступ слева */
   margin-left: 120px;
 }
 
 .hotel__inner{
+/* применяю флексы */
 display: flex;
 }
 .hotel__images{
+  /* внешний отступ справа */
   margin-right: 20px;
 }
 .hotel__text{
+  /* внешний отступ снизу */
   margin-bottom: 20px;
 }
 .hotel__gallery{
+  /* внешний отступ сверху */
   margin-top: 30px;
+  /* применяю флексы */
   display: flex;
+  /* Указывает, следует ли флексам располагаться в одну строку или можно занять несколько строк.  */
   flex-wrap: wrap;
-  justify-content: space-aroundf;
+  /* Флексы равномерно распределяются по всей строке. Пустое пространство перед первым и после последнего элементов равно половине пространства между двумя соседними элементами. */
+  justify-content: space-around;
 }
 .hotel__gallery a {
+  /* отступ сверху */
   margin-top: 50px;
+}
+.price__title span{
+margin-left: 125px;
+}
+.price__inner{
+  display: flex;
+}
+.price__on{
+  margin-right: 70px;
+  width: 530px;
+}
+.price__on-title,
+.price__off-title{
+margin-bottom: 50px;
+font-size: 24px;
+line-height: 28px;
+font-family: 'RobotoCondensed-Regular ';  
+}
+.price__list-item{
+  margin-bottom: 20px;
+}
+.price{
+  background-image: url(../images/price-bg.jpg);
+  background-repeat: no-repeat;
+  background-position:center right 4%;
+
 }
