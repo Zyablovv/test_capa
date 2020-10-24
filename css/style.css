@@ -331,8 +331,8 @@ header {
 
 .our-trip__slider {
   /* ширина */
- width: 50%;
- /* внешний отступ влево */
+  width: 50%;
+  /* внешний отступ влево */
   margin-left: auto;
 }
 
@@ -365,6 +365,7 @@ header {
   /* отступ справа */
   padding-right: 55px;
 }
+
 .our-trip__list {
   /* внешний отступ сверху/снизу */
   margin: 5px 0;
@@ -373,6 +374,7 @@ header {
   /* высота строки */
   line-height: 28px;
 }
+
 /* задаёт стиль первого элемента в группе братских элементов */
 .our-trip__list li:first-child {
   /* внешний отступ снизу */
@@ -393,24 +395,28 @@ header {
   /* отступ сверху/снизу, слева/справа */
   padding: 11px 53px;
 }
-.hotel__title span{
+
+.hotel__title span {
   /* внешний отступ слева */
   margin-left: 120px;
 }
 
-.hotel__inner{
-/* применяю флексы */
-display: flex;
+.hotel__inner {
+  /* применяю флексы */
+  display: flex;
 }
-.hotel__images{
+
+.hotel__images {
   /* внешний отступ справа */
   margin-right: 20px;
 }
-.hotel__text{
+
+.hotel__text {
   /* внешний отступ снизу */
   margin-bottom: 20px;
 }
-.hotel__gallery{
+
+.hotel__gallery {
   /* внешний отступ сверху */
   margin-top: 30px;
   /* применяю флексы */
@@ -420,33 +426,222 @@ display: flex;
   /* Флексы равномерно распределяются по всей строке. Пустое пространство перед первым и после последнего элементов равно половине пространства между двумя соседними элементами. */
   justify-content: space-around;
 }
+
 .hotel__gallery a {
   /* отступ сверху */
   margin-top: 50px;
 }
-.price__title span{
-margin-left: 125px;
+
+.price__title span {
+  margin-left: 125px;
 }
-.price__inner{
+
+.price__inner {
   display: flex;
 }
-.price__on{
+
+.price__on {
   margin-right: 70px;
   width: 530px;
 }
+
 .price__on-title,
-.price__off-title{
-margin-bottom: 50px;
-font-size: 24px;
-line-height: 28px;
-font-family: 'RobotoCondensed-Regular ';  
+.price__off-title {
+  margin-bottom: 50px;
+  font-size: 24px;
+  line-height: 28px;
+  font-family: 'RobotoCondensed-Regular ';
 }
-.price__list-item{
+
+.price__list-item {
   margin-bottom: 20px;
 }
-.price{
+
+.price {
   background-image: url(../images/price-bg.jpg);
   background-repeat: no-repeat;
-  background-position:center right 4%;
+  background-position: center right 4%;
+}
 
+.contacts__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__content {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.contacts__date,
+.contacts__price {
+  /* размер шрифта */
+  font-size: 96px;
+  /* высота строки */
+  line-height: 100px;
+  /* цвет шрифта */
+  color: #E2AB3F;
+  /* шрифт */
+  font-family: 'balqis';
+  /* насыщенность шрифта */
+  font-weight: 300;
+  margin-top: -10px;
+}
+
+.contacts__price {
+  margin-left: 120px;
+}
+
+.contacts__date span,
+.contacts__price span {
+  /* размер шрифта */
+  font-size: 24px;
+  /* высота строки */
+  line-height: 28px;
+  /* цвет */
+  color: #000;
+  /* семейство шрифтов */
+  font-family: 'RobotoCondensed-LightItalic';
+  /* шасыщеность цвета */
+  font-weight: 300;
+  /* блочный элемент */
+  display: block;
+  /*  внешний отступ сверху */
+  margin-top: -10px;
+  margin-left: 205px;
+}
+
+.contacts__form {
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+.contacts__form-title {
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  margin-bottom: 50px;
+  font-family: 'RobotoCondensed-Regular ';
+}
+
+.contacts__form-input {
+  display: block;
+  border: 1px solid #E2AB3F;
+  height: 50px;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 0 31px;
+  outline: none;
+  font-size: 18px;
+  line-height: 21px;
+  font-family: 'RobotoCondensed-Light';
+}
+
+.contacts__form-input::placeholder {
+  color: #000;
+}
+
+.contacts__form-btn {
+  background-color: #fff;
+  font-family: 'RobotoCondensed-Light';
+  font-weight: 300;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  padding: 11px 45px;
+  border: 1px solid #E2AB3F;
+  outline: none;
+  cursor: pointer;
+}
+
+.footer {
+  min-width: 100%;
+  height: 100vh;
+  background-image: url(../images/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  padding-top: 96px;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__text {
+  font-weight: 400;
+  font-family: 'balqis';
+  font-size: 86px;
+  line-height: 115px;
+}
+
+.footer__contacts {
+  width: 356px;
+  height: 527px;
+  background-image: url(../images/footer-contact-bg.png);
+  background-repeat: no-repeat;
+  text-align: center;
+  background-size: cover;
+}
+
+.footer__contacts-title {
+  padding-top: 50px;
+  font-family: 'balqis';
+  font-size: 86px;
+  line-height: 115px;
+  color: #E2AB3F;
+}
+
+.footer__phone,
+.footer__email {
+  padding: 10px;
+  display: inline-block;
+  padding-left: 40px;
+  position: relative;
+}
+
+.footer__phone::before,
+.footer__email::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 0;
+  top: -5px;
+}
+
+.footer__phone {
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-image: url(../images/footer-phone-icone.svg);
+}
+
+.footer__email {
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-image: url(../images/footer-email-icone.svg);
+}
+
+.footer__social {
+  margin-top: 38px;
+}
+
+.footer__social a {
+  margin: 0 7px;
+}
+
+@media (max-width: 1240px) {
+  .header__title {
+    padding-top: 120px;
+    font-size: 180px;
+    line-height: 220px;
+  }
+
+  .header__title span {
+    font-size: 50px;
+    margin-top: -50px;
+  }
 }
